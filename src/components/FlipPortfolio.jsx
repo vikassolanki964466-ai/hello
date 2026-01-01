@@ -10,7 +10,7 @@ export default function FlipPortfolio() {
   const pages = [
     {
       type: "cover",
-      title: "Vkas Solanki",
+      title: "Vikas Solanki",
       subtitle: "Data science with Python",
       coverNote: "Portfolio",
       coverImg: "", // optional image url
