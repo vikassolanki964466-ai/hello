@@ -48,7 +48,7 @@ export default function FlipPortfolio() {
     },
     {
       title: "education",
-      contact: {
+      education: {
         college:"sushila devi bansal college",
         branch:"CSE-AIML",
         year:2023-2027,
@@ -146,6 +146,7 @@ export default function FlipPortfolio() {
                       </div>
                     </div>
                   )}
+                  {console.log(p.contact)}
 
                   {p.bullets && (
                     <div className="skills-list" style={{ marginTop: 12 }}>
@@ -163,6 +164,17 @@ export default function FlipPortfolio() {
                       <li>Phone: {p.contact.phone}</li>
                       <li>LinkedIn: {p.contact.linkedin}</li>
                     </ul>
+                  )}
+{ console.log(p)}
+                  {p.education && (
+                   
+                    <div className="skills-list" style={{ marginTop: 12 }}>
+                     <ul className="contact-list">
+                      <li>Education: {p.education.college}</li>
+                      <li>Branch: {p.education.branch}</li>
+                      <li>Collage: {p.education.year}</li>
+                    </ul>
+                    </div>
                   )}
 
                   <div className="page-counter">Page {i + 1} / {pages.length}</div>
